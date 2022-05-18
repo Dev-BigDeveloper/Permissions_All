@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zerobranch.layout.SwipeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_layout"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    app:draggedItem="@id/name"
+    app:rightItem="@id/layout"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    app:swipeDirection="left">
+
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:padding="25dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:paddingStart="24dp">
+
+        <ImageView
+            android:id="@+id/tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_local_phone_24"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:id="@+id/sms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_message_24"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Shukurullo\nAbdubannayev"
+        android:gravity="center_vertical"
+        android:paddingEnd="10dp"
+        android:textColor="@color/black"
+        android:background="@drawable/customer_card"
+        android:paddingStart="20dp"
+        android:textSize="20sp"/>
+
+</com.zerobranch.layout.SwipeLayout>
